@@ -12,3 +12,10 @@ Concepts such as user inputs, themes, styles, icons, instrumented tests and a sp
 
 Preview
 --------------
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/ShyBlueMoon/Hora_Da_Gorjeta/master/app/src/main/res/drawable/splash_screen.png" alt="Splash Screen's image of the Tip Time app." width="250"/>
+<img src="https://raw.githubusercontent.com/ShyBlueMoon/Hora_Da_Gorjeta/master/app/src/main/res/drawable/app_running.png" alt="Image of the Tip Time app running." width="250"/>
+
+</p>
+
