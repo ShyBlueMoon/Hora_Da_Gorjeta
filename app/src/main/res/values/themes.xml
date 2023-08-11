@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HoraDaGorjeta" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Cores primarias -->
+        <item name="colorPrimary">@color/verde_claro</item>
+        <item name="colorPrimaryVariant">@color/verde_escuro</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+
+        <!-- Cor da barra de status -->
+        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+        <!-- Campos de input de texto -->
+        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+        <!-- Para botões de opção (botões radio) -->
+        <item name="radioButtonStyle">@style/Widget.HoraDaGorjeta.CompoundButton.RadioButton</item>
+        <!-- Para switches -->
+        <item name="switchStyle">@style/Widget.HoraDaGorjeta.CompoundButton.Switch</item>
+    </style>
+
+    <style name="Theme.HoraDaGorjeta" parent="Base.Theme.HoraDaGorjeta" />
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Hora da Gorjeta</string>
+    <string name="valor_do_servico">Valor do Serviço</string>
+    <string name="string_btn_20_porcento">Incrível (20%)</string>
+    <string name="string_btn_15_porcento">Bom (15%)</string>
+    <string name="string_btn_18_porcento">Ótimo (18%)</string>
+    <string name="string_arredondar_gorjeta">Arredondar gorjeta?</string>
+    <string name="string_como_foi_o_atendimento">Como foi o atendimento?</string>
+    <string name="string_calcular">Calcular</string>
+    <string name="string_valor_da_gorjeta">Valor da Gorjeta: %s</string>
+    <string name="string_erro_digite_novamente">Digite os valores para calcular</string>
+</resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iconeValorDoServico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@id/viewValorDoServico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/viewValorDoServico"
+        app:srcCompat="@drawable/ic_loja" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/viewValorDoServico"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:hint="@string/valor_do_servico"
+        app:layout_constraintStart_toEndOf="@id/iconeValorDoServico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/viewValorDoServicoEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textColorHint="#757575">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/icon_service_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@id/viewPerguntaServico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/viewPerguntaServico"
+        app:srcCompat="@drawable/ic_servico" />
+
+    <TextView
+        android:id="@+id/viewPerguntaServico"
+        style="@style/Widgets.HoraDaGorjeta.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/string_como_foi_o_atendimento"
+        app:layout_constraintStart_toStartOf="@id/viewValorDoServico"
+        app:layout_constraintTop_toBottomOf="@id/viewValorDoServico"
+         />
+
+    <RadioGroup
+        android:id="@+id/viewOpcoesDeGorjeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="Widget.HoraDaGorjeta.CompoundButton.RadioButton"
+        android:checkedButton="@id/btn_vinte_porcento"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@id/viewPerguntaServico"
+        app:layout_constraintTop_toBottomOf="@id/viewPerguntaServico">
+
+        <RadioButton
+            android:id="@+id/btn_vinte_porcento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_btn_20_porcento" />
+
+        <RadioButton
+            android:id="@+id/btn_dezoito_porcento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_btn_18_porcento" />
+
+        <RadioButton
+            android:id="@+id/btn_quinze_porcento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_btn_15_porcento" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/icone_arredondamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@id/switch_arredondar_gorjeta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/switch_arredondar_gorjeta"
+        app:srcCompat="@drawable/ic_arredondar" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switch_arredondar_gorjeta"
+        style="@style/Widget.HoraDaGorjeta.CompoundButton.Switch"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/string_arredondar_gorjeta"
+        app:layout_constraintStart_toStartOf="@id/viewPerguntaServico"
+        app:layout_constraintTop_toBottomOf="@id/viewOpcoesDeGorjeta" />
+
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/string_calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/switch_arredondar_gorjeta"
+        app:layout_constraintTop_toBottomOf="@id/switch_arredondar_gorjeta" />
+
+    <TextView
+        android:id="@+id/view_gorjeta_resultado"
+        style="@style/Widgets.HoraDaGorjeta.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/cinza_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_calcular"
+        tools:text="Valor da Gorjeta: R$ 10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

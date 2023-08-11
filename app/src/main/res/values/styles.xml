@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+    <style name="Widgets.HoraDaGorjeta.TextView"
+        parent="Widget.MaterialComponents.TextView">
+        <item name="android:minHeight">@dimen/min_text_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAppearance">@dimen/text_appearance_body</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <style name="Widget.HoraDaGorjeta.CompoundButton.RadioButton"
+        parent="Widget.MaterialComponents.CompoundButton.RadioButton">
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:textAppearance">@dimen/text_appearance_body</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <style name="Widget.HoraDaGorjeta.CompoundButton.Switch"
+        parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="android:minHeight">@dimen/min_text_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAppearance">@dimen/text_appearance_body</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="android:colorControlActivated">@color/verde_claro</item>
+
+
+    </style>
+</resources>
